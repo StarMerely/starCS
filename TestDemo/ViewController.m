@@ -41,6 +41,7 @@
 - (IBAction)zjxButtonPress:(id)sender {
 
     NSLog(@"1234");
+    NSLog(@"master1的代码")
 
 }
 
