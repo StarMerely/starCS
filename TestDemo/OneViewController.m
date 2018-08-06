@@ -12,6 +12,7 @@
 //
 
 #import "OneViewController.h"
+#import "ZJXModel.h"
 
 @interface OneViewController ()
 
@@ -22,11 +23,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+
     NSLog(@"live分支");
+    NSLog(@"sell分支哦");
+    [self sellMethod];
 }
 
 - (void)liveMethod {
     NSLog(@"%s", __func__);
+}
+
+- (void)sellMethod {
+    NSLog(@"%s", __func__);
+    ZJXModel *zjxModel = [ZJXModel new];
+    zjxModel.age = 28;
+    zjxModel.name = @"star";
 }
 
 - (void)didReceiveMemoryWarning {
