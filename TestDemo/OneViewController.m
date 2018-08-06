@@ -22,6 +22,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    NSLog(@"live分支");
+}
+
+- (void)liveMethod {
+    NSLog(@"%s", __func__);
 }
 
 - (void)didReceiveMemoryWarning {
