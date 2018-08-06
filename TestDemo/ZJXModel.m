@@ -12,4 +12,13 @@
 
 @implementation ZJXModel
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        NSLog(@"%s", __func__);
+    }
+    return self;
+}
+
 @end
