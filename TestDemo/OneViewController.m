@@ -22,6 +22,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+
+    NSLog(@"sell分支哦");
+}
+
+- (void)sellMethod {
+    NSLog(@"%s", __func__);
 }
 
 - (void)didReceiveMemoryWarning {
