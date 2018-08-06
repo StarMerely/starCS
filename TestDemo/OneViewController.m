@@ -12,6 +12,7 @@
 //
 
 #import "OneViewController.h"
+#import "ZJXModel.h"
 
 @interface OneViewController ()
 
@@ -28,6 +29,8 @@
 
 - (void)sellMethod {
     NSLog(@"%s", __func__);
+    ZJXModel *zjxModel = [ZJXModel new];
+    zjxModel.age = 28;
 }
 
 - (void)didReceiveMemoryWarning {

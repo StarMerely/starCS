@@ -10,4 +10,6 @@
 
 @interface ZJXModel : NSObject
 
+@property (nonatomic, assign) NSInteger age;
+
 @end
