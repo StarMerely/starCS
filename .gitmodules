@@ -1,0 +1,6 @@
+[submodule "ZYBLive"]
+	path = ZYBLive
+	url = git@git.afpai.com:native/zyblive.git
+[submodule "zybbaselib"]
+	path = zybbaselib
+	url = git@git.afpai.com:native/zybbaselib.git
