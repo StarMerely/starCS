@@ -40,7 +40,7 @@
 
 - (IBAction)zjxButtonPress:(id)sender {
 
-    NSLog(@"123");
+    NSLog(@"1234");
 
 }
 
