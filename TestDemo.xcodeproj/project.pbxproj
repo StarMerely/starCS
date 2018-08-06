@@ -15,7 +15,10 @@
 		F8BAD80D20F87B950097677D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8BAD80C20F87B950097677D /* Assets.xcassets */; };
 		F8BAD81020F87B950097677D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8BAD80E20F87B950097677D /* LaunchScreen.storyboard */; };
 		F8BAD81320F87B950097677D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BAD81220F87B950097677D /* main.m */; };
-		F8BAD81A20F8837A0097677D /* launchvideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F8BAD81920F8837A0097677D /* launchvideo.mp4 */; };
+		F8F823FA21181F3000A05564 /* ZJXModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F823F921181F3000A05564 /* ZJXModel.m */; };
+		F8F823FD21181F3A00A05564 /* ZJXView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F823FC21181F3A00A05564 /* ZJXView.m */; };
+		F8F8240121181F5100A05564 /* OneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F823FF21181F5100A05564 /* OneViewController.m */; };
+		F8F8240221181F5200A05564 /* OneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8F8240021181F5100A05564 /* OneViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +35,13 @@
 		F8BAD80F20F87B950097677D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8BAD81120F87B950097677D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8BAD81220F87B950097677D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F8BAD81920F8837A0097677D /* launchvideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = launchvideo.mp4; sourceTree = "<group>"; };
+		F8F823F821181F3000A05564 /* ZJXModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJXModel.h; sourceTree = "<group>"; };
+		F8F823F921181F3000A05564 /* ZJXModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJXModel.m; sourceTree = "<group>"; };
+		F8F823FB21181F3A00A05564 /* ZJXView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJXView.h; sourceTree = "<group>"; };
+		F8F823FC21181F3A00A05564 /* ZJXView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJXView.m; sourceTree = "<group>"; };
+		F8F823FE21181F5100A05564 /* OneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OneViewController.h; sourceTree = "<group>"; };
+		F8F823FF21181F5100A05564 /* OneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneViewController.m; sourceTree = "<group>"; };
+		F8F8240021181F5100A05564 /* OneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OneViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +74,6 @@
 		F8BAD80220F87B930097677D /* TestDemo */ = {
 			isa = PBXGroup;
 			children = (
-				F8BAD81920F8837A0097677D /* launchvideo.mp4 */,
 				F8BAD80320F87B930097677D /* AppDelegate.h */,
 				F8BAD80420F87B930097677D /* AppDelegate.m */,
 				F8BAD80620F87B930097677D /* ViewController.h */,
@@ -78,6 +86,13 @@
 				F8143DDA2101BC90003C2DB8 /* ZJX.xcconfig */,
 				F86E78A0210EEDD6008C3CF7 /* UIButton+SKButton.h */,
 				F86E78A1210EEDD6008C3CF7 /* UIButton+SKButton.m */,
+				F8F823F821181F3000A05564 /* ZJXModel.h */,
+				F8F823F921181F3000A05564 /* ZJXModel.m */,
+				F8F823FB21181F3A00A05564 /* ZJXView.h */,
+				F8F823FC21181F3A00A05564 /* ZJXView.m */,
+				F8F823FE21181F5100A05564 /* OneViewController.h */,
+				F8F823FF21181F5100A05564 /* OneViewController.m */,
+				F8F8240021181F5100A05564 /* OneViewController.xib */,
 			);
 			path = TestDemo;
 			sourceTree = "<group>";
@@ -139,11 +154,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8BAD81A20F8837A0097677D /* launchvideo.mp4 in Resources */,
 				F8BAD81020F87B950097677D /* LaunchScreen.storyboard in Resources */,
 				F8BAD80D20F87B950097677D /* Assets.xcassets in Resources */,
 				F8881A89211041A600A82A9D /* Info.plist in Resources */,
 				F8BAD80B20F87B930097677D /* Main.storyboard in Resources */,
+				F8F8240221181F5200A05564 /* OneViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,7 +172,10 @@
 				F8BAD80820F87B930097677D /* ViewController.m in Sources */,
 				F86E78A2210EEDD6008C3CF7 /* UIButton+SKButton.m in Sources */,
 				F8BAD81320F87B950097677D /* main.m in Sources */,
+				F8F823FD21181F3A00A05564 /* ZJXView.m in Sources */,
 				F8BAD80520F87B930097677D /* AppDelegate.m in Sources */,
+				F8F8240121181F5100A05564 /* OneViewController.m in Sources */,
+				F8F823FA21181F3000A05564 /* ZJXModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
