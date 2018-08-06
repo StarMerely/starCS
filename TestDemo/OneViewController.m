@@ -23,14 +23,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-
     NSLog(@"sell分支哦");
+    [self sellMethod];
 }
 
 - (void)sellMethod {
     NSLog(@"%s", __func__);
     ZJXModel *zjxModel = [ZJXModel new];
     zjxModel.age = 28;
+    zjxModel.name = @"star";
 }
 
 - (void)didReceiveMemoryWarning {
