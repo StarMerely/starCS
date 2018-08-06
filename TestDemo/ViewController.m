@@ -40,7 +40,7 @@
 
 - (IBAction)zjxButtonPress:(id)sender {
     NSLog(@"123567");
-    NSLog(@"master1的代码")
+    NSLog(@"master1的代码");
 }
 
 - (void)didReceiveMemoryWarning {
