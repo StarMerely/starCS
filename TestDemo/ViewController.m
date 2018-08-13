@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "UIButton+SKButton.h"
+#import "OneViewController.h"
 
 @interface ViewController ()
 
@@ -40,6 +41,9 @@
 
 - (IBAction)zjxButtonPress:(id)sender {
     NSLog(@"master的代码");
+    NSLog(@"live的代码");
+    OneViewController *oVC = [OneViewController new];
+    [self presentViewController:oVC animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {
