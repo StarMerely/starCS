@@ -16,9 +16,12 @@
 
 - (void)goMethod {
     NSLog(@"%s", __func__);
+    
     for (int i = 0; i<10; i++) {
         NSLog(@"这里是live代码");
     }
+
+    NSLog(@"我又加了一段");
 }
 
 /*
