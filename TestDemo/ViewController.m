@@ -44,6 +44,7 @@
     NSLog(@"live的代码");
     OneViewController *oVC = [OneViewController new];
     [self presentViewController:oVC animated:YES completion:nil];
+    NSLog(@"sell的代码");
 }
 
 - (void)didReceiveMemoryWarning {
