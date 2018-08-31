@@ -17,9 +17,36 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9E-Hp-BTp">
+                                <rect key="frame" x="164" y="51" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w5p-2W-d7p"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Ak-HD-tbo">
+                                <rect key="frame" x="0.0" y="269.5" width="375" height="128"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="wnb-TK-0wX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="h9E-Hp-BTp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4La-hd-wuz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Ak-HD-tbo" secondAttribute="trailing" id="4iI-Yz-YbM"/>
+                            <constraint firstItem="h9E-Hp-BTp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="31" id="5K1-GP-ctx"/>
+                            <constraint firstItem="2Ak-HD-tbo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QFc-hj-8K4"/>
+                            <constraint firstItem="2Ak-HD-tbo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oLK-tR-CXD"/>
+                            <constraint firstItem="2Ak-HD-tbo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="waW-Dv-H0I"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="showView" destination="2Ak-HD-tbo" id="Qyt-Uf-F0a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
